@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Matemasie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+body {
+    padding: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:black;
+    color:white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header{
+    color: white;
+    padding: 10px;
+    position:fixed;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container a{
+    text-decoration: none;
+    color:white;
+}
+
+
+.logo {
+    font-family: "Matemasie", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    cursor:pointer;
+}
+
+.name h1 {
+    color: black;
+    font-size: 10px;
+    padding-left: 20px;
+    padding-top: 10px;
+    transition: color 0.5s ease-in-out; 
+}
+
+.name h1:hover {
+    color: white;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+#bigText p{
+    font-size:150px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-right:200px;
+    padding-left:50px;
+    padding-top:90px;
+    padding-bottom:25px;
+}
+
+.container2{
+    display: flex;
+    justify-content: space-around;
+    padding:20px;
+    padding-top:100px;
+}
+
+/*transition to make divs pop out when hovered over */
+
+.about, .projects, .experience, .index {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: rgb(49,49,48);    
+    color: white;
+    padding: 70px;
+    font-size: 50px;
+    transition: background-color 0.5s ease, transform 0.3s ease, font-size 0.3s ease; /* add transition */
+    cursor:pointer;
+    border-radius: 15px;
+}
+
+
+.about:hover, .projects:hover, .experience:hover, .index:hover {
+    transform: scale(1.05); 
+    font-size: 60px; 
+}
+
+
+.about:hover{
+    background-image: url("images/myself1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about a{
+    text-decoration: none;
+    color:white;
+}
+
+.index:hover{
+    background-image: url("images/homepage.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.projects a{
+    text-decoration: none;
+    color:white;
+}
+
+.projects:hover{
+    background-image: url("images/project.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.experience a{
+    text-decoration: none;
+    color:white;
+}
+
+.experience:hover{
+    background-image: url("images/experience.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.container2 a:hover{
+    color:rgb(98, 103, 105);
+}
+
+
+
+
+/*transition of color*/
+
+.container h1, #bigText p, .container2 p {
+    transition: color 0.3s ease; 
+}
+
+.scrolled {
+    background-color: #FFECD1; 
+    color: black; 
+    
+}
+
+
+.scrolled h1, .scrolled p {
+    transition: color 0.3s ease; 
+    color: black; 
+}
+
+.scrolled .name h1{
+    display:none;
+}
+
+.scrolled a{
+    color:black;
+}
+
+
+.scrolled .about{
+    background-color:#f9dbb1; 
+}
+
+.scrolled .experience{
+    background-color: #f9dbb1; 
+}
+
+.scrolled .projects{
+    background-color:#f9dbb1; 
+}
+
+.scrolled .index{
+    background-color:#f9dbb1; 
+}
+
+
+
+ 
+
+/* socials */
+
+.socials {
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    padding-top: 100px;
+    padding-bottom:50px;
+    text-align:center;
+    
+}
+
+.socialContainer{
+    justify-content: center;
+    display:flex;
+}
+
+.socialContainer h1{
+    padding:3px;
+}
+
+
+#insta a{
+    text-decoration: none;
+    transition: color 0.5s ease;
+    cursor:pointer;
+}
+
+#insta a:hover{
+    color:rgb(209, 43, 159);
+}
+
+
+
+#linkedIn a{
+    text-decoration: none;
+    transition: color 0.5s ease;
+    cursor:pointer;
+}
+
+
+#linkedIn a:hover{
+    color:rgb(9, 136, 233);
+}
+
+#git a{
+    text-decoration: none;
+    transition: color 0.5s ease;
+    cursor:pointer;
+}
+
+#git a:hover{
+    color:rgb(84, 84, 84)
+}
+
+#email a{
+    text-decoration: none;
+    transition: color 0.5s ease;
+    cursor:pointer;
+}
+
+#email a:hover{
+    color:rgb(223, 48, 21);
+}
+
+
+
+
+/* script for about.html */
+
+.aboutMe{
+    padding-left: 25px;
+    width: 315px;
+}
+
+.aboutMe p {
+    font-size:20px;
+}
+
+#container3{
+    display: flex;
+    padding:20px;
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#container4{
+    display:flex;
+}
+
+.otherHobbies{
+    padding-left: 250px;
+    text-align: center;
+}
+
+.otherHobbies h2 {
+    font-size: 45px;
+}
+
+.otherHobbies h3{
+    font-size: 50px;
+}
+.otherHobbies img{
+    width: 300px;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.otherHobbies img:hover{
+    transform: scale(1.05); 
+}
+
+#wrestling{
+    padding-right:150px;
+}
+
+.index a{
+    text-decoration: none;
+}
+
+
+/*script for projects.html*/
+
+.project_container{
+    display: flex;
+    justify-content: space-around;
+    padding:20px; 
+}
+
+.project_container h2{
+    text-align: center;
+}
+
+.project_container video{
+    display: block;
+    margin: 0 auto;
+}
+
+.project_container p{
+    text-align: center;
+}
+
+
+
+/*script for experience.html*/
+
+.work_container{
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.work_container h2{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.work_container ul{
+    font-size:20px;
+    text-align: center;
+    list-style-position: inside;
+}
+
+
+.resume {
+    font-family: "Bree Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:30px;
+    text-align: center;
+}
