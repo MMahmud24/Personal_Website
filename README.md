@@ -8,7 +8,7 @@ This is my portfolio website where someone can learn more about me and my projec
 
 Here's a walkthrough of implemented features:
 
-<img src='GameBacker.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='Personal_Website.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with LICEcap
 
